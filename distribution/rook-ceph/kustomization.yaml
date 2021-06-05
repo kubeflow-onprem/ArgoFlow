@@ -18,7 +18,6 @@ resources:
 - https://raw.githubusercontent.com/rook/rook/v1.6.4/cluster/examples/kubernetes/ceph/storageclass-bucket-delete.yaml
 - https://raw.githubusercontent.com/rook/rook/v1.6.4/cluster/examples/kubernetes/ceph/filesystem.yaml
 - https://raw.githubusercontent.com/rook/rook/v1.6.4/cluster/examples/kubernetes/ceph/cluster.yaml
-- namespace.yaml
 # - rook-ceph-cert.yaml
 # - rook-rgw-cert.yaml
 # - dashboard-ingress.yaml
@@ -28,6 +27,7 @@ resources:
 patchesStrategicMerge:
 - cluster-patch.yaml
 - set-default-storage.yaml
+- namespace.yaml
 
 images:
 - name: rook/ceph
