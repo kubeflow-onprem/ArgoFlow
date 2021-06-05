@@ -6,8 +6,8 @@ spec:
   selfSigned:
     $patch: delete
   acme:
-    email: <<__cert_manager.email_user__>>@<<__cert_manager.email_domain__>>
-    server: <<__cert_manager.server__>>
+    email: vanderspek.david@gmail.com
+    server: https://acme-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
       name: gateways-issuer-account-key
     solvers:

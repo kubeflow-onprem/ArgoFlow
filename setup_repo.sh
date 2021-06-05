@@ -62,7 +62,7 @@ select yn in "Yes" "No"; do
           read -p 'OIDC Client Secret: ' OIDC_CLIENT_SECRET_INPUT
           kubectl create secret generic -n auth oauth2-proxy --from-literal=client-id=${OIDC_CLIENT_ID_INPUT} --from-literal=client-secret=${OIDC_CLIENT_SECRET_INPUT} --from-literal=cookie-secret=${COOKIE_SECRET} --dry-run=client -o yaml | kubeseal | yq eval -P > ${DISTRIBUTION_PATH}/oidc-auth/base/oauth2-proxy-secret.yaml
           break;;
-        No ) exit;;
+        No ) break;;
     esac
 done
 
@@ -76,7 +76,7 @@ select yn in "Yes" "No"; do
           kubectl create secret generic -n cert-manager cloudflare-api-token-secret --from-literal=api-token=${CLOUDFLARE_API_TOKEN} --dry-run=client -o yaml | kubeseal | yq eval -P > ${DISTRIBUTION_PATH}/cloudflare-secrets/cloudflare-api-token-secret-cert-manager.yaml
           kubectl create secret generic -n kube-system cloudflare-api-token-secret --from-literal=cloudflare_api_token=${CLOUDFLARE_API_TOKEN} --dry-run=client -o yaml | kubeseal | yq eval -P > ${DISTRIBUTION_PATH}/cloudflare-secrets/cloudflare-api-token-secret-external-dns.yaml
           break;;
-        No ) exit;;
+        No ) break;;
     esac
 done
 
@@ -90,6 +90,6 @@ select yn in "Yes" "No"; do
           read -p 'Repository HTTPS Password: ' REPO_HTTPS_PASSWORD
           kubectl create secret generic -n argocd git-repo-secret --from-literal=HTTPS_USERNAME=${REPO_HTTPS_USERNAME} --from-literal=HTTPS_PASSWORD=${REPO_HTTPS_PASSWORD} --dry-run=client -o yaml | kubeseal | yq eval -P > ${DISTRIBUTION_PATH}/argocd/overlays/private-repo/secret.yaml
           break;;
-        No ) exit;;
+        No ) break;;
     esac
 done

@@ -8,6 +8,6 @@ spec:
   issuerRef:
     name: gateways-issuer
     kind: ClusterIssuer
-  commonName: <<__subdomain_auth__>>.<<__domain__>>
+  commonName: auth.kubeflow-onprem.com
   dnsNames:
-    - <<__subdomain_auth__>>.<<__domain__>>
+    - auth.kubeflow-onprem.com

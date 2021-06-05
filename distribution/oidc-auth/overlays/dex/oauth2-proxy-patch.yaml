@@ -40,16 +40,16 @@ spec:
       - name: extraArgs.skip-provider-button
         value: "true"
       - name: extraArgs.cookie-domain
-        value: .<<__domain__>>
+        value: .kubeflow-onprem.com
       - name: extraArgs.whitelist-domain
-        value: .<<__domain__>>
+        value: .kubeflow-onprem.com
       - name: extraArgs.oidc-issuer-url
-        value: "https://<<__subdomain_auth__>>.<<__domain__>>"
+        value: "https://auth.kubeflow-onprem.com"
       - name: extraArgs.login-url
-        value: "https://<<__subdomain_auth__>>.<<__domain__>>/auth"
+        value: "https://auth.kubeflow-onprem.com/auth"
       - name: extraArgs.oidc-jwks-url
-        value: "https://<<__subdomain_auth__>>.<<__domain__>>/keys"
+        value: "https://auth.kubeflow-onprem.com/keys"
       - name: extraArgs.redeem-url
-        value: "https://<<__subdomain_auth__>>.<<__domain__>>/token"
+        value: "https://auth.kubeflow-onprem.com/token"
       - name: extraArgs.skip-oidc-discovery
         value: "true"

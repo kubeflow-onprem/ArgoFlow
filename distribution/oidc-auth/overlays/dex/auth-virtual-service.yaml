@@ -9,7 +9,7 @@ spec:
   gateways:
   - auth-gateway
   hosts:
-  - <<__subdomain_auth__>>.<<__domain__>>
+  - auth.kubeflow-onprem.com
   http:
   - route:
     - destination:

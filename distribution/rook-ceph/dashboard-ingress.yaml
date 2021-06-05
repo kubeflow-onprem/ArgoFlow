@@ -12,10 +12,10 @@ metadata:
 spec:
   tls:
    - hosts:
-     - <<__subdomain_ceph__>>.<<__domain__>>
+     - rook-ceph.kubeflow-onprem.com
      secretName: rook-ceph-ingressgateway-certs
   rules:
-  - host: <<__subdomain_ceph__>>.<<__domain__>>
+  - host: rook-ceph.kubeflow-onprem.com
     http:
       paths:
       - path: /

@@ -9,6 +9,6 @@ spec:
     name: letsencrypt-prod
     kind: ClusterIssuer
   dnsNames:
-    - <<__subdomain_grafana__>>.<<__domain__>>
-    - <<__subdomain_kiali__>>.<<__domain__>>
-    - <<__subdomain_kubecost__>>.<<__domain__>>
+    - grafana.kubeflow-onprem.com
+    - kiali.kubeflow-onprem.com
+    - kubecost.kubeflow-onprem.com

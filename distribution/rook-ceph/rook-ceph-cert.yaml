@@ -8,6 +8,6 @@ spec:
   issuerRef:
     name: gateways-issuer
     kind: ClusterIssuer
-  commonName: <<__subdomain_ceph__>>.<<__domain__>>
+  commonName: rook-ceph.kubeflow-onprem.com
   dnsNames:
-    - <<__subdomain_ceph__>>.<<__domain__>>
+    - rook-ceph.kubeflow-onprem.com

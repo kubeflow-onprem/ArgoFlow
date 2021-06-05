@@ -45,7 +45,7 @@ spec:
           # be run in the toolbox pod. The output of the commands can be seen by getting the pod log.
           #
           # example: print the ceph status
-          ceph dashboard set-grafana-api-url https://<<__subdomain_grafana__>>.<<__domain__>>
+          ceph dashboard set-grafana-api-url https://grafana.kubeflow-onprem.com
       volumes:
       - name: mon-endpoint-volume
         configMap:
