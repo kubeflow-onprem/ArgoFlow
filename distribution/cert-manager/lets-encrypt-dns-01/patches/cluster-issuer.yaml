@@ -13,7 +13,7 @@ spec:
     solvers:
     - dns01:
         cloudflare:
-          email: <<__cloudflare.email__>>
+          email: vanderspek.david@gmail.com
           apiTokenSecretRef:
             name: cloudflare-api-token-secret
             key: api-token
