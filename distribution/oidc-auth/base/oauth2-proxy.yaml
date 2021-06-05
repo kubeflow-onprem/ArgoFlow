@@ -46,15 +46,15 @@ spec:
       - name: extraArgs.oidc-issuer-url
         value: https://auth.kubeflow-onprem.com
       # - name: extraArgs.login-url
-      #   value: "https://auth.https://auth.kubeflow-onprem.com/auth/realms/kubeflow/protocol/openid-connect/auth"
+      #   value: "https://auth.kubeflow-onprem.com/auth/realms/kubeflow/protocol/openid-connect/auth"
       # - name: extraArgs.oidc-jwks-url
-      #   value: "https://https://auth.kubeflow-onprem.com/keys"
+      #   value: "https://auth.kubeflow-onprem.com/keys"
       # - name: extraArgs.redeem-url
-      #   value: "https://auth.https://auth.kubeflow-onprem.com/auth/realms/kubeflow/protocol/openid-connect/token"
+      #   value: "https://auth.kubeflow-onprem.com/auth/realms/kubeflow/protocol/openid-connect/token"
       # - name: extraArgs.profile-url
-      #   value: "https://auth.https://auth.kubeflow-onprem.com/auth/realms/kubeflow/protocol/openid-connect/userinfo"
+      #   value: "https://auth.kubeflow-onprem.com/auth/realms/kubeflow/protocol/openid-connect/userinfo"
       # - name: extraArgs.validate-url
-      #   value: "https://auth.https://auth.kubeflow-onprem.com.nl/auth/realms/kubeflow/protocol/openid-connect/userinfo"
+      #   value: "https://auth.kubeflow-onprem.com.nl/auth/realms/kubeflow/protocol/openid-connect/userinfo"
       # - name: extraArgs.scope
       #   value: email
       # - name: extraArgs.scope
